@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import productData from './components/products/productData';
+import Products from './components/products/product';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div>
+      <main>
+        <h1>
+          Interfaz de usuario: React
+        </h1>
+        <div className={'designer'}>
+          <a href="https://github.com/Zachlesk"> 
+          <h4>
+          By: Zachlesk
+        </h4>
+        <img src= 'https://cdn-icons-png.flaticon.com/512/25/25231.png' width={30}/> 
         </a>
-      </header>
+          </div>
+
+        <div className={"grid"}>
+          {
+            productData.map((product, i) => <Products {...product} key={i}/>)
+          }
+        </div>
+      </main>
     </div>
-  );
+);
 }
 
 export default App;
