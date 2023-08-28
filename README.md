@@ -5,7 +5,10 @@
 ## Ramas existentes
 
 - 1. **Interfaz-React**:
-Este proyecto fue creado con la intención de practicar componentes y ponerlos en práctica conjuntamente con props y jsx. Se hizo una interfaz de e-commerce donde se renderizan datos, con componentes y sistema UI. ¡Primeros pasos en React! 
+Este proyecto fue creado con la intención de practicar componentes y ponerlos en práctica conjuntamente con props y jsx. Se hizo una interfaz de e-commerce donde se renderizan datos, con componentes y sistema UI. ¡Primeros pasos en React!
+
+- 2. **Cine-Colombia**:
+Taller práctico hecho como apoyo para aplicar conceptos (hooks, state, components and props). Se implementó un buscador con un consumo de api simulando una web de peliculas funcional, con componente aplicacado a la card de la pelicula y consumo de la api. 
 
 ### Contribución
 
