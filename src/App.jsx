@@ -35,15 +35,15 @@ const App = () => {
             />
         </div>   
 
-        {movies.length  > 0 ? 
-        movies.map((movie)=>  
+        {movies && movies.length  > 0 ? 
+       ( movies.map((movie)=>  
             <div className='contenedor'>
                 <CardMovie movie1 = {movie}></CardMovie>
             </div>
             
-        ) : <div className='empty'>
+        )) : (<div className='empty'>
                 <h2> There's not movies </h2>
-            </div>}
+            </div>)}
 </div>
 )
 }
